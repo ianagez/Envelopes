@@ -2,7 +2,7 @@ package service;
 
 import model.Envelope;
 
-public class PostMan{
+public class PostalWorker {
 
     public boolean putOneIntoAnother(Envelope envFirst, Envelope envSecond) {
         Envelope smaller = envFirst.getArea() < envSecond.getArea() ? envFirst : envSecond;

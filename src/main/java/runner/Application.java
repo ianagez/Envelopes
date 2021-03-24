@@ -1,7 +1,7 @@
 package runner;
 
 import model.Envelope;
-import service.PostMan;
+import service.PostalWorker;
 import service.StringConsts;
 import service.Util;
 import service.messenger.Messenger;
@@ -48,8 +48,8 @@ public class Application  {
     }
 
     private boolean isFittedIn(double[] sides) {
-        PostMan postMan = new PostMan();
-        return postMan.putOneIntoAnother
+        PostalWorker postalWorker = new PostalWorker();
+        return postalWorker.putOneIntoAnother
                 (new Envelope(sides[0], sides[1]), new Envelope(sides[2], sides[3]));
     }
 
