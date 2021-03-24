@@ -1,19 +1,10 @@
 package runner;
 
 import model.Envelope;
-import model.PostMan;
+import service.PostMan;
 import service.StringConsts;
 import service.Util;
 import service.messenger.Messenger;
-
-/**
- * This program  determines if one envelope can be nested
- * inside the other.The program asks the user for
- * envelopes' sides one parameter at a time. After each calculation,
- * the program asks the user if he wants to continue.
- * If the user answers “y” or “yes” (case insensitive),
- * the program continues from the beginning, otherwise it exits.
- */
 
 public class Application  {
     private final Messenger messenger;
